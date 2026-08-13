@@ -21,13 +21,13 @@
 # pyramids(4)
 
 # Given an integer n, build an inverted pyramid of stars and return it as an array of strings, where each string is one row.
-def invertedPyramids(n):
-    for i in range(1,n+1):
-        row=''
-        for m in range(i-1):
-            row+=' '
-        for m in range(2*(n-i)+1):
-            row+='*'
-        print(row)
+# def invertedPyramids(n):
+#     for i in range(1,n+1):
+#         row=''
+#         for m in range(i-1):
+#             row+=' '
+#         for m in range(2*(n-i)+1):
+#             row+='*'
+#         print(row)
 
-invertedPyramids(4)
+# invertedPyramids(4)
