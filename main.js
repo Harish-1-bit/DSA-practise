@@ -33,3 +33,20 @@
     // }
 
     // pyramid(4)
+
+
+// Given an integer n, build an inverted pyramid of stars and return it as an array of strings, where each string is one row.
+const invertedPyramids = (n)=>{
+    for (i=1;i<=n;i++){
+        let row = ''
+        for(s=0; s<i-1; s++){
+            row+=' '
+        }
+        for(s=0;s<2*(n-i)+1;s++){
+            row+='*'
+        }
+        console.log(row)
+    }
+}
+
+invertedPyramids(4)
