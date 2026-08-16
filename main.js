@@ -50,3 +50,21 @@
 // }
 
 // invertedPyramids(4)
+
+// Given an integer n, build an n × n square where the border is drawn with the * character and the inside is left empty. Return the square as an array of n strings, one per row.
+const square = (n)=>{
+    for(let i=0;i<n;i++){
+        let row=''
+        for(let j=0;j<n;j++){
+            if(i===0 || 
+                i=== n-1 || j===0 || j===n-1){
+                row+='* '
+            }else{
+                row+='  '
+            }
+        }
+        console.log(row)
+    }
+}
+
+square(4)

@@ -31,3 +31,16 @@
 #         print(row)
 
 # invertedPyramids(4)
+
+# Given an integer n, build an n × n square where the border is drawn with the * character and the inside is left empty. Return the square as an array of n strings, one per row.
+def square(n):
+    for i in range(n):
+        row=''
+        for j in range(n):
+            if i==0 or i == n-1 or j==0 or j== n-1:
+                row+='* '
+            else:
+                row+='  '
+        print(row)
+
+square(5)
