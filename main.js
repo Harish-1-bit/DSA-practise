@@ -68,3 +68,29 @@
 // }
 
 // square(4)
+
+// Given an integer n, build a diamond of * characters that is 2n - 1 rows tall and 2n - 1 characters wide at its widest point. Return the diamond as an array of strings, one per row.
+const diamond = (n)=>{
+    for(i=1; i<=n;i++){
+        let row=''
+        for(m=0;m<n-i;m++){
+            row+=' '
+        }
+        for(m=0;m<2*i-1;m++){
+            row+='*'
+        }
+        console.log(row)
+    }
+    for(i=2;i<=n;i++){
+        let row=''
+        for(m=0;m<i-1;m++){
+            row+=' '
+        }
+        for(m=0;m<2*(n-i) + 1;m++){
+            row+='*'
+        }
+        console.log(row)
+    }
+}
+
+diamond(4)
