@@ -94,3 +94,22 @@
 // }
 
 // diamond(4)
+
+// Given an integer n, build Floyd's Triangle and return its rows. Floyd's Triangle fills consecutive integers starting at 1, one row at a time, from left to right. Row i (counting from 1) holds exactly i numbers.
+// const floyd=(n)=>{
+//     let num=0
+//     let newArr=[]
+//     for(i=1;i<=n;i++){
+//         let arr=[]
+//         for(j=0;j<i;j++){
+//             num++
+//             arr.push(num)
+//         }
+//         console.log(arr)
+//         newArr.push(arr)
+//         // console.log()
+//     }
+//     console.log(newArr)
+// }
+
+// floyd(5)

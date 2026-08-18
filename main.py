@@ -44,3 +44,38 @@
 #         print(row)
 
 # square(5)
+
+# Given an integer n, build a diamond of * characters that is 2n - 1 rows tall and 2n - 1 characters wide at its widest point. Return the diamond as an array of strings, one per row.
+# def diamond(n):
+#     for i in range(1,n+1):
+#         row=''
+#         for m in range(n-i):
+#             row+=' '
+#         for m in range(2*i-1):
+#             row+='*'
+#         print(row)
+#     for i in range(n-1,0,-1):
+#         row =''
+#         for m in range(n-i):
+#             row+=' '
+#         for m in range(2*i-1):
+#             row+='*'
+#         print(row)
+
+
+# diamond(4)
+
+# Given an integer n, build Floyd's Triangle and return its rows. Floyd's Triangle fills consecutive integers starting at 1, one row at a time, from left to right. Row i (counting from 1) holds exactly i numbers.
+# def floyd(n):
+#     num=0
+#     newArr=[]
+#     for i in range(1,n+1):
+#         arr=[]
+#         for j in range(i):
+#             num=num+1
+#             arr.append(num)
+#         print(arr)
+#         newArr.append(arr)
+#     print(newArr)
+
+# floyd(3)
