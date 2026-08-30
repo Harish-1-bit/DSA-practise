@@ -79,3 +79,16 @@
 #     print(newArr)
 
 # floyd(3)
+
+# Given an integer n, return true if n is a prime number and false otherwise.
+def checkPrime(n):
+    isPrime=True
+    for i in range(2,n):
+        if(n%i==0):
+            isPrime=False
+    if(isPrime):
+        print(True)
+    else:
+        print(False)
+
+checkPrime(10)

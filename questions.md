@@ -9,3 +9,5 @@ q4. Given an integer n, build an n × n square where the border is drawn with th
 q5. Given an integer n, build a diamond of * characters that is 2n - 1 rows tall and 2n - 1 characters wide at its widest point. Return the diamond as an array of strings, one per row.
 
 q6. Given an integer n, build Floyd's Triangle and return its rows. Floyd's Triangle fills consecutive integers starting at 1, one row at a time, from left to right. Row i (counting from 1) holds exactly i numbers.
+
+q7. Given an integer n, return true if n is a prime number and false otherwise.
