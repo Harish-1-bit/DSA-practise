@@ -115,18 +115,18 @@
 // floyd(5)
 
 // Given an integer n, return true if n is a prime number and false otherwise.
-const checkPrime = (n)=>{
-    let isPrime=true
-for(i=2;i<n;i++){
-    if(n%i===0){
-       isPrime=false
-    }
-}
-if(isPrime){
-    console.log('prime')
-}else{
-    console.log('not prime')
-}
-}
+// const checkPrime = (n)=>{
+//     let isPrime=true
+// for(i=2;i<n;i++){
+//     if(n%i===0){
+//        isPrime=false
+//     }
+// }
+// if(isPrime){
+//     console.log('prime')
+// }else{
+//     console.log('not prime')
+// }
+// }
 
-checkPrime(17)
+// checkPrime(17)
