@@ -10,4 +10,4 @@ q5. Given an integer n, build a diamond of * characters that is 2n - 1 rows tall
 
 q6. Given an integer n, build Floyd's Triangle and return its rows. Floyd's Triangle fills consecutive integers starting at 1, one row at a time, from left to right. Row i (counting from 1) holds exactly i numbers.
 
-q7. Given an integer n, return true if n is a prime number and false otherwise.
+q7. Given an integer N return the reverse of the given number. If a number has trailing zeros, then its reverse will not include them. For e.g , reverse of 10400 will be 401 instead of 00401.

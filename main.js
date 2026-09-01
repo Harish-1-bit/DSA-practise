@@ -130,3 +130,28 @@
 // }
 
 // checkPrime(17)
+
+// Given an integer N return the reverse of the given number. If a number has trailing zeros, then its reverse will not include them. For e.g , reverse of 10400 will be 401 instead of 00401.
+// const reverseNumber = (n) => {
+//     let num = String(n)
+//     let array= num.split('')
+//     console.log(array)
+//     let newArray = []
+//     for(i=array.length-1;i>=0;i--){
+//         newArray.push(array[i])
+//     }
+//     let result=newArray.join('')
+//     console.log(result)
+// }
+
+// const reverseNumber = (n)=>{
+//     let rev=0
+//     while(n>0){
+//         let lastDigit = n%10
+//         rev=rev*10 + lastDigit
+//         n=Math.floor(n/10)
+//     }
+//     console.log(rev)
+// }
+
+// reverseNumber(111012)
