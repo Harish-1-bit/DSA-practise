@@ -157,18 +157,18 @@
 // reverseNumber(111012)
 
 // Check if a number is Armstrong Number or not.
-const armStrong = (n) => {
-    let string = String(n)
-    let list = string.split('')
-    let sum=0
-    for(i=0;i<string.length;i++){
-        sum = sum + (list[i]**string.length)
-    }
-    if(n===sum){
-        console.log(true)
-    }else{
-        console.log(false)
-    }
-}
+// const armStrong = (n) => {
+//     let string = String(n)
+//     let list = string.split('')
+//     let sum=0
+//     for(i=0;i<string.length;i++){
+//         sum = sum + (list[i]**string.length)
+//     }
+//     if(n===sum){
+//         console.log(true)
+//     }else{
+//         console.log(false)
+//     }
+// }
 
-armStrong(1634)
+// armStrong(1634)
