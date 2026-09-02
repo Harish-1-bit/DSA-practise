@@ -171,4 +171,16 @@
 //     }
 // }
 
-// armStrong(1634)
+// const armStrong = (n) => {
+//     let length = n.toString().length
+//     let sum = 0
+//     let num =n
+//     while(n>0){
+//         let lastDigit = n % 10
+//         sum +=Math.pow(lastDigit, length)
+//         n=Math.floor(n/10)  
+//     }
+//     return sum===num
+// }
+
+// console.log(armStrong(153))
