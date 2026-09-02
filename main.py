@@ -92,3 +92,17 @@
 #         print(False)
 
 # checkPrime(10)
+
+# Check if a number is Armstrong Number or not
+# def armStrong(n):
+#     num=n
+#     length =len(str(n))
+#     sum=0
+#     while(n>0):
+#         ld = n % 10
+#         sum+=ld ** length
+#         n = n // 10
+#     return num == sum
+
+
+# print(armStrong(153))
