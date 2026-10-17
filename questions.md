@@ -13,3 +13,7 @@ q6. Given an integer n, build Floyd's Triangle and return its rows. Floyd's Tria
 q7. Given an integer N return the reverse of the given number. If a number has trailing zeros, then its reverse will not include them. For e.g , reverse of 10400 will be 401 instead of 00401.
 
 q8. Check if a number is Armstrong Number or not
+
+q9. Two sum. Given an array of integers nums and an integer target. Return the indices(0 - indexed) of two elements in nums such that they add up to target.
+
+Each input will have exactly one solution, and the same element cannot be used twice. Return the answer in any order.

@@ -184,3 +184,66 @@
 // }
 
 // console.log(armStrong(153))
+
+
+//Given an array of integers nums and an integer target. Return the indices(0 - indexed) of two elements in nums such that they add up to target.
+
+// Each input will have exactly one solution, and the same element cannot be used twice. Return the answer in any order.
+
+// class Solution {
+//     twoSum=(ar,target)=>{
+//     let result = []
+// for(let i=0;i<=ar.length;i++){
+//     for(let j=i+1;j<=ar.length;j++){
+//         if(ar[i]+ar[j]===target){
+//             result.push(i)
+//             result.push(j)
+//         }
+//     }
+// }
+// console.log(result)
+// return result
+// }
+// }
+
+// let ob =new Solution()
+// ob.twoSum( [1, 6, 2, 10, 3],7)
+
+class Solution {
+    twoSum= (ar,target) =>{
+        let map = new Map()
+        for(let i=0;i<ar.length;i++){
+            let difference = target - ar[i]
+            if(map.has(difference)){
+                return [map.get(difference),i]
+            }
+            map.set(ar[i],i)
+        }
+        return []
+    }
+}
+
+let obj = new Solution()
+console.log(
+obj.twoSum([1, 6, 2, 10, 3],7)
+)
+
+//     twoSum = (ar, target) => {
+//         let map = new Map();
+
+//         for (let i = 0; i < ar.length; i++) {
+//             let complement = target - ar[i];
+
+//             if (map.has(complement)) {
+//                 return [map.get(complement), i];
+//             }
+
+//             map.set(ar[i], i);
+//         }
+
+//         return [];
+//     }
+// }
+
+// let ob = new Solution();
+// console.log(ob.twoSum([1, 6, 2, 10, 3], 7));

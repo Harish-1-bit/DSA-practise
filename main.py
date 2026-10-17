@@ -106,3 +106,16 @@
 
 
 # print(armStrong(153))
+
+# Given an array of integers nums and an integer target. Return the indices(0 - indexed) of two elements in nums such that they add up to target.
+
+# Each input will have exactly one solution, and the same element cannot be used twice. Return the answer in any order.
+
+class Solution:
+    def twoSum(ar,target):
+        map = {}
+        for i in range(ar):
+            diff = target - ar[i]
+            if diff in map:
+                return [map[diff],i]
+            map[ar[i]]=i
