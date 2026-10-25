@@ -209,24 +209,24 @@
 // let ob =new Solution()
 // ob.twoSum( [1, 6, 2, 10, 3],7)
 
-class Solution {
-    twoSum= (ar,target) =>{
-        let map = new Map()
-        for(let i=0;i<ar.length;i++){
-            let difference = target - ar[i]
-            if(map.has(difference)){
-                return [map.get(difference),i]
-            }
-            map.set(ar[i],i)
-        }
-        return []
-    }
-}
+// class Solution {
+//     twoSum= (ar,target) =>{
+//         let map = new Map()
+//         for(let i=0;i<ar.length;i++){
+//             let difference = target - ar[i]
+//             if(map.has(difference)){
+//                 return [map.get(difference),i]
+//             }
+//             map.set(ar[i],i)
+//         }
+//         return []
+//     }
+// }
 
-let obj = new Solution()
-console.log(
-obj.twoSum([1, 6, 2, 10, 3],7)
-)
+// let obj = new Solution()
+// console.log(
+// obj.twoSum([1, 6, 2, 10, 3],7)
+// )
 
 //     twoSum = (ar, target) => {
 //         let map = new Map();
@@ -247,3 +247,6 @@ obj.twoSum([1, 6, 2, 10, 3],7)
 
 // let ob = new Solution();
 // console.log(ob.twoSum([1, 6, 2, 10, 3], 7));
+
+// Given the head of a singly linked list. Reverse the given linked list and return the head of the modified list.
+

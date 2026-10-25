@@ -14,6 +14,7 @@ q7. Given an integer N return the reverse of the given number. If a number has t
 
 q8. Check if a number is Armstrong Number or not
 
-q9. Two sum. Given an array of integers nums and an integer target. Return the indices(0 - indexed) of two elements in nums such that they add up to target.
+q9. Two sum. Given an array of integers nums and an integer target. Return the indices(0 - indexed) of two elements in nums such that they add up to target.Each input will have exactly one solution, and the same element cannot be used twice. Return the answer in any order.
 
-Each input will have exactly one solution, and the same element cannot be used twice. Return the answer in any order.
+Given the head of a singly linked list. Reverse the given linked list and return the head of the modified list.
+
