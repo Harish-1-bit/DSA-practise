@@ -250,3 +250,103 @@
 
 // Given the head of a singly linked list. Reverse the given linked list and return the head of the modified list.
 
+class Node{
+    constructor (value){
+        this.value=value
+        this.next=null
+    }
+}
+
+class linkedList{
+    constructor(){
+        this.head = null
+    }
+    
+    append(value){
+        let newNode = new Node(value)
+        if(!this.head){
+            this.head = newNode
+            return
+        }
+
+        let current = this.head
+        while(current.next !== null ){
+            current=current.next
+        }
+        current.next = newNode
+    }
+
+    preAppend(value){
+        let newNode = new Node(value)
+            newNode.next = this.head
+            this.head = newNode
+    }
+
+    printLinkedList(){
+        if(this.head === null){
+            console.log("Linked list is empty")
+        }
+
+        let current = this.head
+        let result = []
+        while(current !== null){
+            console.log(current)
+            result.push(current)
+            current = current.next
+        }
+        console.log(result)
+    }
+
+    search(targer){
+        let current = this.head
+        let index = 0
+        while(current !==null ){
+            if(current.value === targer){
+                console.log(index)
+                return
+            }
+                
+            current = current.next
+            index++
+        }
+    }
+
+    update(oldValue, newValue){
+        let current = this.head
+        while(current !==null ){
+            if(current.value === oldValue){
+                current.value = newValue
+                return true
+            }
+            current = current.next
+        }
+        return false
+    }
+
+    delete(target){
+        if(this.head === null ){
+            return
+        }
+
+        if(this.head.value === target ){
+            this.head === this.head.next
+            return true
+        }
+
+        let current = this.head
+        while (current !== null && current.next.value !== target){
+            current = current.next
+        }
+        current.next = current.next.next
+        return
+    }
+
+}
+
+let ll = new linkedList()
+ll.append(10)
+ll.preAppend(5)
+ll.search(10)
+console.log("Updated:", ll.update(10, 11));
+ll.delete(11)
+ll.printLinkedList()
