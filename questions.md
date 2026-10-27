@@ -18,3 +18,4 @@ q9. Two sum. Given an array of integers nums and an integer target. Return the i
 
 Given the head of a singly linked list. Reverse the given linked list and return the head of the modified list.
 
+Given an array arr of n integers, where arr[i] represents price of the stock on the ith day. Determine the maximum profit achievable by buying and selling the stock at most once. 

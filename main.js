@@ -351,65 +351,81 @@
 // ll.delete(11)
 // ll.printLinkedList()
 
-class Node {
-    constructor(value){
-        this.value = value
-        this.next = null
-    }
-}
+// class Node {
+//     constructor(value){
+//         this.value = value
+//         this.next = null
+//     }
+// }
 
-class linkedList {
-    constructor(){
-        this.head = null
-    }
+// class linkedList {
+//     constructor(){
+//         this.head = null
+//     }
 
-    append(num){
-        let newNode = new Node(num)
-        if(this.head === null){
-            this.head = newNode
-            return
-        }
-        let current = this.head
-        while(current.next){
-            current = current.next
-        }
-        current.next = newNode
-    }
+//     append(num){
+//         let newNode = new Node(num)
+//         if(this.head === null){
+//             this.head = newNode
+//             return
+//         }
+//         let current = this.head
+//         while(current.next){
+//             current = current.next
+//         }
+//         current.next = newNode
+//     }
 
-    reverse(){
-        let prev = null
-        let current = this.head
-        while(current){
-            let next = current.next
-            current.next = prev
-            prev = current
-            current = next
-        }
+//     reverse(){
+//         let prev = null
+//         let current = this.head
+//         while(current){
+//             let next = current.next
+//             current.next = prev
+//             prev = current
+//             current = next
+//         }
 
-        this.head = prev
-    }
+//         this.head = prev
+//     }
 
-    display(){
-        if(this.head === null){
-            console.log('Data structure is empty')
-            return
-        }
+//     display(){
+//         if(this.head === null){
+//             console.log('Data structure is empty')
+//             return
+//         }
 
-        let current = this.head
-        let result = []
-        while(current){
-            result.push(current.value)
-            current = current.next
-        }
-        console.log(result)
-    }
-}
+//         let current = this.head
+//         let result = []
+//         while(current){
+//             result.push(current.value)
+//             current = current.next
+//         }
+//         console.log(result)
+//     }
+// }j
 
-let ll = new linkedList()
-ll.append(1)
-ll.append(2)
-ll.append(3)
-ll.append(4)
-ll.append(5)
-ll.reverse()
-ll.display()
+// let ll = new linkedList()
+// ll.append(1)
+// ll.append(2)
+// ll.append(3)
+// ll.append(4)
+// ll.append(5)
+// ll.reverse()
+// ll.display()
+
+// Given an array arr of n integers, where arr[i] represents price of the stock on the ith day. Determine the maximum profit achievable by buying and selling the stock at most once. 
+
+
+// const CheckDuplicate = (num) =>{
+//     let sortedNums = num.sort((a,b) => a - b)
+//     for(i = 0; i<=num.length; i++){
+//         if(sortedNums[i] === sortedNums[i+1]){
+//             return true
+//         }else{
+//             return false
+//         }
+//     }
+// }
+
+// console.log(CheckDuplicate([1, 2, 3, 0]))
